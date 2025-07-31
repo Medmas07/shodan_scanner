@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: shodan-scanner
+Version: 0.1
+Summary: Outil CLI pour scanner IP avec Shodan et Nmap
+Author: WhoCare
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Dynamic: author
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

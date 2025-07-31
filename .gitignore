@@ -1,0 +1,42 @@
+# Fichiers Python compilés
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environnements virtuels (si tu utilises venv ou virtualenv)
+venv/
+env/
+ENV/
+
+# Fichiers de configuration d’éditeur/IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Fichiers de logs
+*.log
+
+# Fichiers temporaires
+*.tmp
+*.temp
+
+# Fichiers de cache
+.cache/
+
+# Fichiers générés par pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Fichiers de sortie
+*.out
+*.exe
+
+# MacOS files
+.DS_Store
+
+# Windows files
+Thumbs.db
+
+# Résultats JSON générés (optionnel, si tu ne veux pas les versionner)
+*.json
