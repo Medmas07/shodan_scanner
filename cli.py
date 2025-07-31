@@ -23,7 +23,7 @@ def parse_args_or_prompt():
 
     args = parser.parse_args()
 
-    if not any(vars(args).values()):
+    if not args.ip:
         print("\n🔧 Aucune option fournie. Passons en mode interactif.\n")
         args.ip = input("Adresse IP de départ (ex: 192.168.1.1): ")
         args.max_attempts = int(input("Nombre d'IPs à scanner [default: 1]: ") or 1)

@@ -1,5 +1,6 @@
 import subprocess
 import platform
+import re
 
 
 USER_AGENTS = [
@@ -10,6 +11,8 @@ USER_AGENTS = [
 ]
 
 def increment_ip(ip):
+    if not ip:
+        raise ValueError("IP address is missing.")
     ip_parts = list(map(int, ip.split('.')))
     ip_parts[3] += 1
     if ip_parts[3] > 255:
@@ -48,7 +51,6 @@ def get_linux_distribution():
                 return line.split("=")[1].replace('"', '').lower()
     except Exception:
         return ""
-import re
 
 def parse_nmap_output(nmap_output: str) -> list:
     ports = []
