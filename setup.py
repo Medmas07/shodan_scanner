@@ -10,7 +10,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "shodan-scan=scanner.cli:main",  # commande terminale → fonction à appeler
+            "shodan-scan=cli:main",  # commande terminale → fonction à appeler
         ]
     },
     author="WhoCare",
